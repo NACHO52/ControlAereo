@@ -1,5 +1,6 @@
 #include "Aeropuerto.h"
 #include <string>
+#include <iostream>
 
 int Aeropuerto::getId()
 {
@@ -74,4 +75,42 @@ bool Aeropuerto::GuardarEnDisco(int nroRegistro) {
     bool guardo = fwrite(this, sizeof(Aeropuerto), 1, p);
     fclose(p);
     return guardo;
+}
+
+void MenuAeropuerto()
+{
+	int opcion;
+	while (true)
+	{
+		system("cls");
+		std::cout << "Menu Clientes" << std::endl;
+		std::cout << "1 - CREAR" << std::endl;
+		std::cout << "2 - EDITAR" << std::endl;
+		std::cout << "3 - ELIMINAR" << std::endl;
+		std::cout << "4 - LISTAR" << std::endl;
+		std::cout << "0 - VOLVER" << std::endl;
+		std::cout << "OPCION: " << std::endl;
+		std::cin >> opcion;
+		switch (opcion)
+		{
+		case 1: 
+
+			break;
+		case 2: 
+
+			break;
+		case 3: 
+
+			break;
+		case 4:
+
+			break;
+		case 0: 
+			return;
+		default: 
+			std::cout << "Opcion incorrecta. Presione una tecla para continuar";
+			system("pause>null");
+			break;
+		}
+	}
 }

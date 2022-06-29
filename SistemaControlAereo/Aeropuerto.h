@@ -22,3 +22,7 @@ class Aeropuerto
 		bool GuardarEnDisco();
 		bool GuardarEnDisco(int nroRegistro);
 };
+
+//FUNCIONES GLOBALES
+
+void MenuAeropuerto();
